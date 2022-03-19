@@ -245,11 +245,11 @@ main{
       grid-template-columns: auto auto auto;
       grid-template-rows: auto auto;
       font-size: .8rem;
-      width:80px;
+      width:70px;
       .for1,.for2,.for3{
         justify-self: center;
         grid-row: 1;
-
+        line-height: 1.4rem;
       }
       .for1{
         grid-column: 1;
@@ -275,15 +275,15 @@ main{
       input[type=range]::-webkit-slider-runnable-track {
         padding:0 5px;
         width: 100%;
-        height: 25px;
+        height: 30px;
         cursor: pointer;
         animate: 0.2s;
         background: var(--toggKeyBg);
         border-radius: 50px;
       }
       input[type=range]::-webkit-slider-thumb {
-        height: 15px;
-        width: 15px;
+        height: 20px;
+        width: 20px;
         border-radius: 50px;
         background: var(--keyResultTogg);
         cursor: pointer;
@@ -295,7 +295,7 @@ main{
       }
       input[type=range]::-moz-range-track {
         width: 100%;
-        height: 25px;
+        height: 30px;
         padding:0 5px;
         cursor: pointer;
         animate: 0.2s;
@@ -303,15 +303,15 @@ main{
         border-radius: 50px;
       }
       input[type=range]::-moz-range-thumb {
-        height: 15px;
-        width: 15px;
+        height: 20px;
+        width: 20px;
         border-radius: 50px;
         background: var(--keyResultTogg);
         cursor: pointer;
       }
       input[type=range]::-ms-track {
         width: 100%;
-        height: 25px;
+        height: 30px;
         padding:0 5px;
         cursor: pointer;
         animate: 0.2s;
@@ -328,8 +328,8 @@ main{
         border-radius: 100px;
       }
       input[type=range]::-ms-thumb {
-        height: 15px;
-        width: 15px;
+        height: 20px;
+        width: 20px;
         border-radius: 50px;
         background: var(--keyResultTogg);
         cursor: pointer;
