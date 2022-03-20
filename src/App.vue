@@ -12,24 +12,24 @@
     </header>
     <div class="result" >{{ result }}</div>
     <div class="keyboard">
-      <div class="div1" @click="calcul(7)">7</div>
-      <div class="div2" @click="calcul(8)">8</div>
-      <div class="div3" @click="calcul(9)">9</div>
-      <div class="div4" @click="del()">del</div>
-      <div class="div5" @click="calcul(4)">4</div>
-      <div class="div6" @click="calcul(5)">5</div>
-      <div class="div7" @click="calcul(6)">6</div>
-      <div class="div8" @click="action('+')">+</div>
-      <div class="div9" @click="calcul(1)">1</div>
-      <div class="div10" @click="calcul(2)">2</div>
-      <div class="div11" @click="calcul(3)">3</div>
-      <div class="div12" @click="action('-')">-</div>
-      <div class="div13" @click="calcul('.')">.</div>
-      <div class="div14" @click="calcul(0)">0</div>
-      <div class="div15" @click="action('/')">/</div>
-      <div class="div16" @click="action('*')">x</div>
-      <div class="div17" @click="reset()">reset</div>
-      <div class="div18" @click="equal()" >=</div>
+      <button class="div1" @click="calcul(7)">7</button>
+      <button class="div2" @click="calcul(8)">8</button>
+      <button class="div3" @click="calcul(9)">9</button>
+      <button class="div4" @click="del()">del</button>
+      <button class="div5" @click="calcul(4)">4</button>
+      <button class="div6" @click="calcul(5)">5</button>
+      <button class="div7" @click="calcul(6)">6</button>
+      <button class="div8" @click="action('+')">+</button>
+      <button class="div9" @click="calcul(1)">1</button>
+      <button class="div10" @click="calcul(2)">2</button>
+      <button class="div11" @click="calcul(3)">3</button>
+      <button class="div12" @click="action('-')">-</button>
+      <button class="div13" @click="calcul('.')">.</button>
+      <button class="div14" @click="calcul(0)">0</button>
+      <button class="div15" @click="action('/')">/</button>
+      <button class="div16" @click="action('*')">x</button>
+      <button class="div17" @click="reset()">reset</button>
+      <button class="div18" @click="equal()" >=</button>
     </div>
   </main>
 </template>
@@ -365,18 +365,21 @@ main{
     margin:auto;
     padding:20px;
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 63px);
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     .div1 ,.div2 , .div3 , .div5 , .div6 , .div7 , .div8 , .div9 , .div10 , .div11 , .div12 , .div13 , .div14 , .div15 , .div16{
       background-color: var(--keyBg);
+      font-size:2rem;
+      font-weight: 700; 
       color:var(--textColor1);
       display:flex;
       justify-content:center;
       align-items: center;
       border-radius: 5px;
-      border-bottom: 3px solid var(--keyShadow);
+      border:none;
+      border-bottom: 4px solid var(--keyShadow);
       cursor: pointer;
     } 
     .div4,.div17{
@@ -384,9 +387,11 @@ main{
       color:var(--textColor3);
       text-transform: uppercase;
       font-size: 1rem;
+      font-weight: 700;
       letter-spacing: .5px;
       border-radius: 5px;
-      border-bottom: 3px solid var(--keyResDelShadow);
+      border:none;
+      border-bottom: 4px solid var(--keyResDelShadow);
       display:flex;
       justify-content:center;
       align-items: center;
@@ -414,8 +419,10 @@ main{
     background-color: var(--keyResultTogg);
     color:var(--textColor4);
     font-size: 1.2rem;
+    font-weight: 700;
     border-radius: 5px;
-    border-bottom: 3px solid var(--keyResultShadow);
+    border:none;
+    border-bottom: 4px solid var(--keyResultShadow);
     display:flex;
     justify-content:center;
     align-items: center;
